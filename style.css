@@ -1,17 +1,6 @@
 body {
     background-color: #4db8ff;
 }
-.total{
-	margin-top: 40px;
-	margin-left: auto;
-}
-
-#txtSearch {
-	position: relative;
-	margin-left: 500px; 
-	width: 320px;
-	height: 35px;
-}
 
 .container {
  position: center;
