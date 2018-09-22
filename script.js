@@ -9,7 +9,7 @@ $(document).ready(function(){
     	$.getJSON(api, function(json){
         	var t = json.main.temp;
         	$("#temp").html(Math.floor(t - 273));
-        	$("#tempf").{setTemp(Math.floor(json.main.temp - 273))};
+        	//$("#tempf").{setTemp(Math.floor(json.main.temp - 273))};
         	$(".wind").html(json.wind.speed);
         	$(".pressure").html(json.main.pressure);
         	$(".humidity").html(json.main.humidity);
@@ -22,7 +22,7 @@ $(document).ready(function(){
     	}
 
 
-    var x =false;
+ /*   var x =false;
     function setTemp(t)
 	{
     if(x)
@@ -38,9 +38,9 @@ $(document).ready(function(){
         	x = true;
     	}
 	}
+*/
 
-
-	 var lon;
+    var lon;
     var lat;
     if(navigator.geolocation)
     {
