@@ -11,15 +11,18 @@ $(document).ready(function(){
 
     	$.getJSON(api, function(json){
         	var t = json.main.temp;
+		var img_url = 'http://api.openweathermap.org/img/w/'+json.weather[0].icon +'.png';
         	$(".temp").html(Math.floor(t - 273));
         	//$("#tempf").{setTemp(Math.floor(json.main.temp - 273))};
         	$(".wind").html(json.wind.speed);
         	$(".pressure").html(json.main.pressure);
         	$(".humidity").html(json.main.humidity);
         	$(".place").html(json.name + ", " + json.sys.country);
+		$(".image").attr("src",img_url);
         	$(".date").html(json.dt);
-        	$(".condition").html(json.weather.main);
-        	$(".image").html(json.icon);
+        	$(".condition").html(json.weather[0].main);
+		$(".description").html(json.weather[0].description);
+        	
 
     		});
     	}
