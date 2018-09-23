@@ -1,22 +1,25 @@
 $(document).ready(function(){
 
 
-	var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
-    lat + '&lon=' + lon + '&appid=d3cddc39c8389212f004085ec4ba3be8';
 
 
     function operation(lat, lon){
+
+	
+	var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
+    lat + '&lon=' + lon + '&appid=d3cddc39c8389212f004085ec4ba3be8';
+
     	$.getJSON(api, function(json){
         	var t = json.main.temp;
-        	$("#temp").html(Math.floor(t - 273));
+        	$(".temp").html(Math.floor(t - 273));
         	//$("#tempf").{setTemp(Math.floor(json.main.temp - 273))};
         	$(".wind").html(json.wind.speed);
         	$(".pressure").html(json.main.pressure);
         	$(".humidity").html(json.main.humidity);
         	$(".place").html(json.name + ", " + json.sys.country);
         	$(".date").html(json.dt);
-        	$(".weather").html(json.weather.description);
-        	$(".icon").html(json.icon);
+        	$(".condition").html(json.weather.main);
+        	$(".image").html(json.icon);
 
     		});
     	}
