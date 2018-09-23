@@ -1,10 +1,7 @@
-body {
-    background-color: #ccff33;
-}
 
 .container {
  position: center;
- background-color: #b3e0ff ;
+ background-color:  #4da6ff;
  margin-top: 40px;
     
     width: 320px;
@@ -12,13 +9,13 @@ body {
  border-radius: 40px 40px 40px 40px ;  
 }
 .section-1 {
+	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:20px;
 	position: center;
 	top: 0;
 	margin-top: 0px;
 	text-align: center;
 	height: 40px;
-	background color: #83AB91;
 	color: red;
 }
 .section-2 {
@@ -26,7 +23,7 @@ body {
 	margin-top: 20px;
 	text-align: left;
 	height: 40px;
-	background color: #83AB91;
+	/*background color: #83AB91;*/
 	color: blue;
 }
 .section-3 {
@@ -44,10 +41,5 @@ background-color: #123455;
 border: none;
 }
 
-.condition {
-	text-align: right;
-}
 
-.description {
-	text-align: right;
-}
+
