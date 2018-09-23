@@ -43,3 +43,11 @@ color: #123455;
 background-color: #123455;
 border: none;
 }
+
+.condition {
+	text-align: right;
+}
+
+.description {
+	text-align: right;
+}
